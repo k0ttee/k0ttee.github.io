@@ -1,0 +1,128 @@
+   /**********************************/
+   /*шапка без рекламы и с прокруткой*/
+   /**********************************/
+  
+   /*шапка с рекламным баннером едет вверх (скрывая баннер)*/
+   #page-header{margin-top:-132px}
+   /*верх с личкой*/
+   .icon-ucp{
+      position:fixed;
+      top:0;
+      left:-425px;
+      width:100% !important;
+      background:rgba(222,222,222,0.7);
+      padding-right:40px;
+      z-index:100;
+      color:#333 !important;
+      line-height:22px !important;
+      padding-left:450px;
+      height:22px !important;
+      border-bottom:solid 1px#BBB;
+      -webkit-backdrop-filter:saturate(180%)blur(8px)
+   }
+   /*внутри верха с личкой*/
+   .icon-ucp a{color:#333 !important}
+   
+   /*ссылка на главную*/
+   #logo{position:fixed;top:-112px;left:-295px;z-index:200;line-height:22px !important;}
+   
+   /*картинка логотипа*/
+   .icon-home{display:none}
+   
+   /*внутри ссылки на главную*/
+   #logo:after{content:'';color:#333 !important;font-size:20px;line-height:20px !important;}
+
+   .pravila,.icon-points,.icon-faq,.icon-members{margin-right:0 !important;padding-left:0 !important;padding-right:10px !important;}
+   
+   .icon-logout{margin-right:0 !important;padding-left:10px !important;padding-right:10px !important;}
+   
+   /*a .icon-faq[href='https://ruseo.net/games/']{display:none !important}*/
+   .icon-faq:first-child{display:none !important}
+   
+   .icon-thanks_toplist{display:none !important}
+   .icon-thanks{display:none !important}
+   
+   
+   /*верх с балансом 734px*/
+   .linklist.rightside{
+      position:fixed;
+      margin:-4px -20px 0 0;
+      
+      right:15px;
+      z-index:100;
+      height:22px;
+      color:#333;
+      line-height:22px !important;
+      background:none
+   }
+   
+   /*внутри верха с билансом*/
+   .linklist.rightside a{color:#333 !important}
+   
+   li .pravila{padding:0 !important}
+   
+   /*форма поиска по сайту*/
+   /*form#search{position:fixed;z-index:200;top:1px;left:400px;}*/
+   a[title='Параметры расширенного поиска']{display:none}
+
+   /*форма поиска не удалась*/
+   /*input#keywords{width:50px !important;border-radius:5px;border:none !important;background:#FFF !important;padding-left:3px;}*/
+   /*input#keywords:focus{position:fixed;top:2px;left:2px;width: 100%;z-index:9999 !important}*/
+   /*input.button2[type=submit]{border-radius:5px;border:none !important;height:18px;background:#666;color:#FFF;text-transform:lowercase}*/
+   /*input.button2[type=submit]:hover{color:#FFF;}*/
+  
+   /*так что прячу форму поиска*/
+   input#keywords{display:none;}
+   form#search{display: none;}
+  
+   /*******************/
+   /*разные полезности*/
+   /*******************/
+   
+   /*кнопка жалобы не нужна (для избежания случайных нажатий)*/
+   .report-icon{display:none}
+   
+   /*кнопки социальных сетей*/
+   .yashare-auto-init.b-share_theme_counter{display:none} /*соцсети не нужно*/
+   
+   /*твиттер не нужен (выпилился не везде)*/
+   #twitter-widget-1{display:none !important;}
+  
+  
+   /********/
+   /*подвал*/
+   /********/
+   
+   /*самый низ со счетчиками не нужен*/
+   #page-footer{display:none}
+
+/* шрифты */
+*{
+	min-font-size: 16px;
+}
+
+/* убрать подписи под картинками */
+.attach-image + dd{display:none !important}
+
+/* убрать "код: выделить все" */
+.codebox dt{display:none !important}
+
+
+/* hide smiley-box */
+/* #smiley-box{display:none !important} */
+
+a[href='https://promoheads.com/ru/']{display:none !important}
+
+@media screen and (max-width:800px){
+   .icon-ucp{height:44px !important}
+   .linklist.rightside{top:26px !important;left:0 !important;border-top:solid 1px#BBB !important}
+}
+
+/* без спонсоров */
+.sponsor{display:none}
+/*noindex{display:none}*/
+#block_2_h{display:none}
+/* подтяжка сайдбара */
+#block_3_h{margin-top:-260px}
+#block_4_h{margin-top:-260px}
+#block_5_h{margin-top:-260px}
