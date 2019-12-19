@@ -51,11 +51,12 @@
 			display: none;
 		}
 		#icon_instagram{
-			width: 30px;
-			height: 30px;
+			width: 19px;
+			height: 19px;
 			float: right;
 			margin: 20px 28px 0 0;
-			background: url(icon-instagram.svg);
+			background: url(icon-instagram.svg) no-repeat;
+			background-size:contain;
 			opacity: 0.5;
 		}
 		#icon_instagram:hover{
@@ -69,11 +70,12 @@
 
 
 		#icon_vk{
-			width: 41px;
-			height: 23px;
+			width: 26px;
+			height: 15px;
 			float: right;			
 			margin: 24px 24px 0 0;
-			background: url(icon-vk.svg);
+			background: url(icon-vk.svg) no-repeat;
+			background-size:contain;
 		}
 		#icon_vk:hover{
 			opacity: 1;
@@ -301,6 +303,12 @@
 
 /*адаптивность*/
 		@media screen and (max-width:760px){
+
+			
+
+
+
+
 			.advantage{
 			text-align: center;
 			padding: 0 0 0 73px;
@@ -371,6 +379,22 @@
 			#footerPhone{
 				width: 100%;
 				margin: 23px 0;
+			}
+			#icon_instagram{
+				width: 30px;
+				height: 30px;
+				float: right;
+				margin: 20px 28px 0 0;
+				background: url(icon-instagram.svg);
+				opacity: 0.5;
+			}
+
+			#icon_vk{
+				width: 41px;
+				height: 23px;
+				float: right;			
+				margin: 24px 24px 0 0;
+				background: url(icon-vk.svg);
 			}
 		}
 
