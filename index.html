@@ -76,7 +76,7 @@
 			clear: both;
 		}
 		p{
-			margin: 0 32px 0 32px;
+			margin: 0 32px 32px 32px;
 		}
 
 
@@ -132,6 +132,12 @@
 		/*#nomer::placeholder, #fio::placeholder{
 			color: rgba(0, 4, 34, 0.5);
 		}*/
+
+		#fio:focus::-webkit-input-placeholder { color:transparent; }
+		#fio:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+		#fio:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+		#fio:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
 		#fio{
 			color: rgba(0, 4, 34, 0.5);
 		}
@@ -339,6 +345,10 @@
 		<p>Здесь что-нибудь о контореееее ееееееее ееееее ееееее ееееееее ееееееее еееееее ееееее ееееее еееееее еееее еееееее е еее ееееее еееееее еее ееееееее еееееее ееееее ееее ееее еее ееееее еееее ееееееее еееееее еееееее еееееее ееееее ееееее ееее ееееее е ееееее ееееее еее еееееееее ее еееее ееееее ееее еее еееее е еееее ееее еееееее еее ее еееее.</p>
 		<p>Жду мобильного меню гамбургер.</p>
 		<p>Пока под компы меню поверстаю.</p>
+		<p>На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
 		<h2>ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС</h2>
 
 
@@ -390,6 +400,10 @@ $('nav a').each(function () {
         }
     });
 });
+
+// function noPlaceholder(){
+// 	$("#fio").
+// }
 
 </script>
 
