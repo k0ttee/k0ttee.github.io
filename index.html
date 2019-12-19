@@ -33,6 +33,7 @@
 			border: none;
 			cursor: pointer;
 			background:url(icon-menu.svg);
+			display: none;
 		}
 		#icon_instagram{
 			width: 30px;
@@ -55,6 +56,7 @@
 			position: absolute;
 			top: 77px;
 			left: calc(50% - 72px);
+			display: none;
 		}
 		header{
 			width:100%;
@@ -126,6 +128,16 @@
 			text-align: center;
 			font-size: 18px;
 			display: block;
+		}
+		/*#nomer::placeholder, #fio::placeholder{
+			color: rgba(0, 4, 34, 0.5);
+		}*/
+		#fio{
+			color: rgba(0, 4, 34, 0.5);
+		}
+		#fio:focus{
+			color: rgba(0, 4, 34, 1);
+			outline: none;
 		}
 		.submit{
 			background: #FE5E24; 
@@ -230,6 +242,15 @@
 			.truck{
 				background: url(icon-truck.svg) left center no-repeat;
 			}
+			#icon_logo{
+				display: inline;
+			}
+			#mainMenu{
+				display: none;
+			}
+			#icon_menu{
+				display: inline;
+			}
 		}
 		@media screen and (max-width:560px){
 			#footerRight{
@@ -249,6 +270,8 @@
 				margin: 23px 0;
 			}
 		}
+
+/* кости подвала */
 		/*@media screen and (min-width:760px){
 			#footerAddress{
 				width: 60%;
@@ -259,6 +282,40 @@
 				width: 50%;
 			}
 		}*/
+
+/* менющки */
+		#mainMenu{
+			text-align: center;
+			color: #000422;
+			width: 100%;
+			/*margin: 34px;*/
+			position: absolute;
+			top: 90px;
+			left: 0;
+		}
+		#mainMenuWrap{
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		#mainMenu a{
+			font-size: 18px;
+			font-weight: normal;
+			text-decoration: none;
+			margin:0 20% 0 0;
+			opacity: 0.5;
+		}
+		#mainMenu a:last-child{
+			margin: 0;
+		}
+		#mainMenu a:hover{
+			opacity: 1;
+		}
+		.activeLink{
+			color: #FE5E24;
+			opacity: 1 !important;
+		}
+		
+
 	</style>
 </head>
 <body>
@@ -268,10 +325,20 @@
 		<a href="/" target="_blank" id="icon_instagram"></a>
 		<a href="/" target="_blank" id="icon_vk"></a>
 		<a href="/" id="icon_logo"></a>
+
+		<nav id="mainMenu">
+			<div id="mainMenuWrap">
+				<a href="file:///Users/k0ttee/i%20c%20winer/index.html">Главная</a>
+				<a href=/>Контакты</a>
+				<a href=/>Партнёрам</a>
+			</div>
+		</nav>
+
 	</header>
 	<article>
 		<p>Здесь что-нибудь о контореееее ееееееее ееееее ееееее ееееееее ееееееее еееееее ееееее ееееее еееееее еееее еееееее е еее ееееее еееееее еее ееееееее еееееее ееееее ееее ееее еее ееееее еееее ееееееее еееееее еееееее еееееее ееееее ееееее ееее ееееее е ееееее ееееее еее еееееееее ее еееее ееееее ееее еее еееее е еееее ееее еееееее еее ее еееее.</p>
-		<p>Жду мобильного меню гамбургер. Пока под компы меню поверстаю.</p>
+		<p>Жду мобильного меню гамбургер.</p>
+		<p>Пока под компы меню поверстаю.</p>
 		<h2>ПОЧЕМУ СТОИТ  ВЫБРАТЬ ИМЕННО НАС</h2>
 
 
@@ -284,7 +351,7 @@
 		<h2>ЗАКАЗАТЬ ЗВОНОК</h2>
 
 		<form action="/">
-			<input class="forms" type="text" name="fio" placeholder="ФИО">
+			<input class="forms" type="text" id="fio" name="fio" placeholder="ФИО">
 			<input class="forms" type="text" id="nomer" name="nomer" placeholder="Номер">
 			<input class="forms submit" type="submit" value="Оставить заявку!">
 		</form>
@@ -313,6 +380,17 @@
 $(function(){
   $("#nomer").mask("+7(999) 999-99-99");
 });
+
+$(document).ready(function(){
+$('nav a').each(function () {
+        var location = window.location.href;
+        var link = this.href; 
+        if(location == link) {
+            $(this).addClass('activeLink');
+        }
+    });
+});
+
 </script>
 
 
@@ -321,14 +399,11 @@ $(function(){
 С чем прошляпил:
 1.) в ширину всё разъезжается (смотри width: 333px)
 3.) поле телефон надо бы сделать с разметкой под телефон +7(123)123-12-12
+4.) иконку скутера заменить
 
  -->
 
-<!-- <nav>
-	<a href=/>menu one</a>
-	<a href=/>menu two</a>
-	<a href=/>menu three</a>
-</nav> -->
+
 
 
 
@@ -343,6 +418,8 @@ $(function(){
 #footerAddress{background: #600;}
 #footerLeft{background: green;}
 #footerRight{background: blue;}
-#workHours{background: brown;}*/
+#workHours{background: brown;}
+#mainMenu{background: lightgreen;}
+#mainMenuWrap{background: pink;}*/
 
 </style>
