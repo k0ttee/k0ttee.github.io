@@ -198,6 +198,10 @@
 		#fio:focus:hover::-input-placeholder { color:transparent; transition: 0s}
 
 	/* номер */
+		#nomer:hover{ color:#000422 !important; transition: 0.5s;}
+		#nomer:not(:hover){ color:rgba(0, 4, 34, 0.5); !important; transition: 0.5s;}
+
+
 		/* подсказка темнеет при наведении */
 		#nomer:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
 		#nomer:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
@@ -209,6 +213,18 @@
 		#nomer:not(hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
 		#nomer:not(hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
 		#nomer:not(hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+
+		/* подсказка исчезает при фокусе */
+		#nomer:focus::-webkit-input-placeholder { color:transparent; transition: 0s}
+		#nomer:focus:-moz-placeholder { color:transparent; transition: 0s}
+		#nomer:focus::-moz-placeholder { color:transparent; transition: 0s}
+		#nomer:focus:-ms-input-placeholder { color:transparent; transition: 0s}
+
+		/* подсказка исчезает при фокусе и наведении одновременно */
+		#nomer:focus:hover::-webkit-input-placeholder { color:transparent; transition: 0s}
+		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 0s}
+		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 0s}
+		#nomer:focus:hover::-input-placeholder { color:transparent; transition: 0s}
 
 
 
