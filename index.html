@@ -130,11 +130,17 @@
 			display: block;
 		}
 		
-
+		/* плейсхолдер прозрачный при фокусе */
 		#fio:focus::-webkit-input-placeholder { color:transparent; }
 		#fio:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 		#fio:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 		#fio:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+		/* плейсхолдер темнеет при наведении */
+		#fio:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); }
+		#fio:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); } /* FF 4-18 */
+		#fio:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); } /* FF 19+ */
+		#fio:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); } /* IE 10+ */
 
 		#fio{
 			color: rgba(0, 4, 34, 0.5);
