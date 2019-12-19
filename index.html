@@ -130,17 +130,59 @@
 			display: block;
 		}
 		
-		/* плейсхолдер прозрачный при фокусе */
-		#fio:focus::-webkit-input-placeholder { color:transparent; }
-		#fio:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
-		#fio:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
-		#fio:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+		
+	/* фио */
+		/* подсказка темнеет при наведении */
+		#fio:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#fio:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#fio:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#fio:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
 
-		/* плейсхолдер темнеет при наведении */
-		#fio:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); }
-		#fio:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); } /* FF 4-18 */
-		#fio:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); } /* FF 19+ */
-		#fio:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); } /* IE 10+ */
+		/* подсказка светлеет при отведении */
+		#fio:not(:hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#fio:not(:hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#fio:not(:hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#fio:not(:hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+
+		/* подсказка исчезает при фокусе */
+		#fio:focus::-webkit-input-placeholder { color:transparent; transition: 4s;}
+		#fio:focus:-moz-placeholder { color:transparent; transition: 4s;}
+		#fio:focus::-moz-placeholder { color:transparent; transition: 4s;}
+		#fio:focus:-ms-input-placeholder { color:transparent; transition: 4s;}
+
+		/* подсказка исчезает при фокусе и наведении одновременно */
+		#fio:focus:hover::-webkit-input-placeholder { color:transparent; transition: 4s;}
+		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 4s;}
+		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 4s;}
+		#fio:focus:hover::-input-placeholder { color:transparent; transition: 4s;}
+
+	/* номер */
+		/* подсказка темнеет при наведении */
+		#nomer:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#nomer:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#nomer:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+		#nomer:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 4s;}
+
+		/* подсказка светлеет при отведении */
+		#nomer:not(hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#nomer:not(hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#nomer:not(hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+		#nomer:not(hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 4s;}
+
+/*начало конфликта с плагином*/
+		/* плейсхолдер исчезает при фокусе */
+		#nomer:focus::-webkit-input-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus:-moz-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus::-moz-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus:-ms-input-placeholder { color:transparent; transition: 4s;}
+
+		/* подсказка исчезает при фокусе и наведении одновременно */
+		#nomer:focus:hover::-webkit-input-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 4s;}
+		#nomer:focus:hover::-input-placeholder { color:transparent; transition: 4s;}
+/*конец конфликта с плагином*/
+
 
 		#fio{
 			color: rgba(0, 4, 34, 0.5);
@@ -155,6 +197,13 @@
 		#nomer:focus{
 			outline: none;
 		}
+
+		
+		.transition{
+			transition: 4s;
+		}
+
+
 
 		.submit{
 			background: #FE5E24; 
@@ -372,8 +421,8 @@
 		<h2>ЗАКАЗАТЬ ЗВОНОК</h2>
 
 		<form action="/">
-			<input class="forms" type="text" id="fio" name="fio" placeholder="ФИО">
-			<input class="forms" type="text" id="nomer" name="nomer" placeholder="Номер">
+			<input class="forms transition" type="text" id="fio" name="fio" placeholder="ФИО">
+			<input class="forms transition" type="tel" id="nomer" name="nomer" placeholder="Номер">
 			<input class="forms submit" type="submit" value="Оставить заявку!">
 		</form>
 
@@ -396,11 +445,7 @@
 </html>
 
 <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
-<script src="jquery.maskedinput.min.js"></script>
 <script>
-$(function(){
-  $("#nomer").mask("+7(999) 999-99-99");
-});
 
 $(document).ready(function(){
 $('nav a').each(function () {
@@ -412,9 +457,41 @@ $('nav a').each(function () {
     });
 });
 
-// function noPlaceholder(){
-// 	$("#fio").
-// }
+// маска ввода телефона
+window.addEventListener("DOMContentLoaded", function() {
+var keyCode;
+function mask(event) {
+event.keyCode && (keyCode = event.keyCode);
+var pos = this.selectionStart;
+if (pos < 3) event.preventDefault();
+var matrix = "+7 (___) ___-__-__",
+i = 0,
+def = matrix.replace(/\D/g, ""),
+val = this.value.replace(/\D/g, ""),
+new_value = matrix.replace(/[_\d]/g, function(a) {
+return i < val.length? val.charAt(i++) || def.charAt(i): a
+});
+i = new_value.indexOf("_");
+if (i != -1) {
+i < 5 && (i = 3);
+new_value = new_value.slice(0, i)
+}
+var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+function(a) {
+return "\\d{1," + a.length + "}"
+}).replace(/[+()]/g, "\\$&");
+reg = new RegExp("^" + reg + "$");
+if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
+if (event.type == "blur" && this.value.length < 5) this.value = ""
+}
+var input = document.querySelector("#nomer");
+input.addEventListener("input", mask, false);
+input.addEventListener("focus", mask, false);
+input.addEventListener("blur", mask, false);
+input.addEventListener("keydown", mask, false)
+
+
+});
 
 </script>
 
