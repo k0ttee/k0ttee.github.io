@@ -129,6 +129,11 @@
 			font-size: 18px;
 			display: block;
 		}
+		.submit{
+			background: #FE5E24; 
+			color: #FFF;
+			cursor: pointer;
+		}
 		
 		
 	/* фио */
@@ -200,16 +205,12 @@
 
 		
 		.transition{
-			transition: 4s;
+			transition: all 4s;
 		}
 
 
 
-		.submit{
-			background: #FE5E24; 
-			color: #FFF;
-			cursor: pointer;
-		}
+		
 		footer{
 			background: #000422 url(footer-kickscooter.svg) right bottom no-repeat;
 			color: #FFF;
@@ -272,6 +273,10 @@
 			/*margin: 0 100px 0 0;*/
 		}
 
+		#h2fix{
+			margin-top: 150px
+		}
+
 
 /*адаптивность*/
 		@media screen and (max-width:760px){
@@ -316,6 +321,9 @@
 			}
 			#icon_menu{
 				display: inline;
+			}
+			#h2fix{
+				margin-top: 0;
 			}
 		}
 		@media screen and (max-width:560px){
@@ -411,13 +419,13 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
 		<h2>ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС</h2>
 
-
+<div style="min-height: 47px">
 		<p class="advantage clock"><span class="vCenterFix">Диагностика и указание неизменной стоимости в день обращения</span></p>
 		<p class="advantage gear"><span class="vCenterFix">Всегда в наличии оригинальные запчасти с завода производителя</span></p>
 		<p class="advantage like"><span class="vCenterFix">Низкие цены и превосходное качество предоставляемых услуг</span></p>
 		<p class="advantage truck"><span class="vCenterFix">Выезд мастера в пределах МКАД</span></p>
-
-
+</div>
+		<div id="h2fix"></div>
 		<h2>ЗАКАЗАТЬ ЗВОНОК</h2>
 
 		<form action="/">
