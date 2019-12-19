@@ -161,55 +161,43 @@
 		
 	/* фио */
 		/* подсказка темнеет при наведении */
-		#fio:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#fio:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#fio:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#fio:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
+		#fio:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#fio:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#fio:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#fio:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
 
 		/* подсказка светлеет при отведении */
-		#fio:not(:hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#fio:not(:hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#fio:not(:hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#fio:not(:hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
+		#fio:not(:hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#fio:not(:hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#fio:not(:hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#fio:not(:hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
 
 		/* подсказка исчезает при фокусе */
-		#fio:focus::-webkit-input-placeholder { color:transparent;}
-		#fio:focus:-moz-placeholder { color:transparent;}
-		#fio:focus::-moz-placeholder { color:transparent;}
-		#fio:focus:-ms-input-placeholder { color:transparent;}
+		#fio:focus::-webkit-input-placeholder { color:transparent; transition: 0s}
+		#fio:focus:-moz-placeholder { color:transparent; transition: 0s}
+		#fio:focus::-moz-placeholder { color:transparent; transition: 0s}
+		#fio:focus:-ms-input-placeholder { color:transparent; transition: 0s}
 
 		/* подсказка исчезает при фокусе и наведении одновременно */
-		#fio:focus:hover::-webkit-input-placeholder { color:transparent; transition: 1s;}
-		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 1s;}
-		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 1s;}
-		#fio:focus:hover::-input-placeholder { color:transparent; transition: 1s;}
+		#fio:focus:hover::-webkit-input-placeholder { color:transparent; transition: 0s}
+		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 0s}
+		#fio:focus:hover::-moz-placeholder { color:transparent; transition: 0s}
+		#fio:focus:hover::-input-placeholder { color:transparent; transition: 0s}
 
 	/* номер */
 		/* подсказка темнеет при наведении */
-		#nomer:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#nomer:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#nomer:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
-		#nomer:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 1s;}
+		#nomer:hover::-webkit-input-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#nomer:hover:-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#nomer:hover::-moz-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
+		#nomer:hover:-ms-input-placeholder { color:rgba(0, 4, 34, 1); transition: 0.5s;}
 
 		/* подсказка светлеет при отведении */
-		#nomer:not(hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#nomer:not(hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#nomer:not(hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
-		#nomer:not(hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 1s;}
+		#nomer:not(hover)::-webkit-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#nomer:not(hover):-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#nomer:not(hover)::-moz-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
+		#nomer:not(hover):-ms-input-placeholder { color:rgba(0, 4, 34, 0.5); transition: 0.5s;}
 
-/*начало конфликта с плагином*/
-		/* плейсхолдер исчезает при фокусе */
-		#nomer:focus::-webkit-input-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus:-moz-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus::-moz-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus:-ms-input-placeholder { color:transparent; transition: 1s;}
 
-		/* подсказка исчезает при фокусе и наведении одновременно */
-		#nomer:focus:hover::-webkit-input-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus:hover::-moz-placeholder { color:transparent; transition: 1s;}
-		#nomer:focus:hover::-input-placeholder { color:transparent; transition: 1s;}
-/*конец конфликта с плагином*/
 
 
 		#fio{
@@ -228,7 +216,7 @@
 
 		
 		.transition{
-			transition: all 4s;
+			/*transition: all 4s;*/
 		}
 
 
