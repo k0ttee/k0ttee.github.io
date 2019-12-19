@@ -24,7 +24,8 @@
 		}
 		*/
 
-		body{background: #F3F3F3;}
+		body{background: #F6F6F6;}
+		html{background: #F6F6F6;}
 
 		#icon_menu{
 			width: 28px;
@@ -41,7 +42,18 @@
 			float: right;
 			margin: 20px 28px 0 0;
 			background: url(icon-instagram.svg);
+			opacity: 0.5;
 		}
+		#icon_instagram:hover{
+			opacity: 1;
+			transition: 0.5s;
+		}
+		#icon_instagram:not(:hover){
+			opacity: 0.5;
+			transition: 0.5s;
+		}
+
+
 		#icon_vk{
 			width: 41px;
 			height: 23px;
@@ -49,6 +61,17 @@
 			margin: 24px 24px 0 0;
 			background: url(icon-vk.svg);
 		}
+		#icon_vk:hover{
+			opacity: 1;
+			transition: 0.5s;
+		}
+		#icon_vk:not(:hover){
+			opacity: 0.5;
+			transition: 0.5s;
+		}
+
+
+
 		#icon_logo{
 			width: 144px;
 			height: 65px;
@@ -387,6 +410,16 @@
 		.activeLink{
 			color: #FE5E24;
 			opacity: 1 !important;
+		}
+		
+
+		#mainMenu a:hover{
+			opacity: 1;
+			transition: 0.5s;
+		}
+		#mainMenu a:not(:hover){
+			opacity: 0.5;
+			transition: 0.5s;
 		}
 		
 
