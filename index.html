@@ -37,7 +37,6 @@
 			left: 0;*/
 			margin: 20px 0 0 19px;
 			border: none;
-			cursor: pointer;
 			float: left;
 		}
 
@@ -109,6 +108,10 @@
 		}
 		p{
 			margin: 0 32px 32px 32px;
+		}
+		article p{
+			/*text-indent: 10px;*/
+			text-align: justify;
 		}
 
 
@@ -363,8 +366,9 @@
 			#icon_logo{
 				display: inline;
 			}
+/*скрыто меню*/
 			#mainMenu{
-				display: none;
+				/*display: none;*/
 			}
 			#icon_menu{
 				display: inline-block;
@@ -415,6 +419,37 @@
 				background: url(icon-vk.svg);
 			}
 		}
+
+
+		@media screen and (max-width: 760px){
+			#mainMenu{
+				width: 100%;
+				/*background: #F3F3F3;*/
+				position: absolute;
+				top: 190px !important;
+				left: 0;
+			}
+			#mainMenuWrap{
+				width: 100%;
+				margin: none;
+			}
+			#mainMenu a{
+				display: block;
+				width: 100px;
+				margin: 20px auto !important;
+				/*background: lightgreen;*/
+				text-align: center;
+			}
+			article{margin-top:190px !important;}
+		}
+
+
+
+
+
+
+
+
 
 /* кости подвала */
 		/*@media screen and (min-width:760px){
@@ -476,36 +511,35 @@
 <body>
 	<header>
 		<!-- шапка -->
-		<div id="icon_menu"></div>
+		<!-- <div id="icon_menu"></div> -->
 		<a href="/" target="_blank" id="icon_instagram"></a>
 		<a href="/" target="_blank" id="icon_vk"></a>
-		<a href="/" id="icon_logo"></a>
+		<div id="icon_logo"></div>
 
 		<nav id="mainMenu">
 			<div id="mainMenuWrap">
 				<a href="/">Главная</a>
-				<a href="/kontakti">Контакты</a>
 				<a href="/partneram">Партнёрам</a>
+				<a href="/kontakti">Контакты</a>
 			</div>
 		</nav>
 
 	</header>
 	<article>
 		<p>Здесь что-нибудь о контореееее ееееееее ееееее ееееее ееееееее ееееееее еееееее ееееее ееееее еееееее еееее еееееее е еее ееееее еееееее еее ееееееее еееееее ееееее ееее ееее еее ееееее еееее ееееееее еееееее еееееее еееееее ееееее ееееее ееее ееееее е ееееее ееееее еее еееееееее ее еееее ееееее ееее еее еееее е еееее ееее еееееее еее ее еееее.</p>
-		<p>Жду мобильного меню гамбургер.</p>
-		<p>Пока под компы меню поверстаю.</p>
-		<p>На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр. На конторррааа самая конторрристая из всех конторррских конторрр.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia velit aut commodi, iste iure numquam corporis voluptas veniam molestiae itaque natus suscipit amet, tempore ducimus corrupti eius blanditiis odio praesentium, ullam harum magni tempora a explicabo. Corrupti incidunt minus, doloribus beatae earum neque fuga repudiandae nesciunt voluptates laboriosam nobis.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
+		
 		<h2>ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС</h2>
-
-<div style="min-height: 47px">
-		<p class="advantage clock"><span class="vCenterFix">Диагностика и указание неизменной стоимости в день обращения</span></p>
-		<p class="advantage gear"><span class="vCenterFix">Всегда в наличии оригинальные запчасти с завода производителя</span></p>
-		<p class="advantage like"><span class="vCenterFix">Низкие цены и превосходное качество предоставляемых услуг</span></p>
-		<p class="advantage truck"><span class="vCenterFix">Выезд мастера в пределах МКАД</span></p>
-</div>
+<section>
+		<div style="min-height: 47px">
+			<p class="advantage clock"><span class="vCenterFix">Диагностика и указание неизменной стоимости в день обращения</span></p>
+			<p class="advantage gear"><span class="vCenterFix">Всегда в наличии оригинальные запчасти с завода производителя</span></p>
+			<p class="advantage like"><span class="vCenterFix">Низкие цены и превосходное качество предоставляемых услуг</span></p>
+			<p class="advantage truck"><span class="vCenterFix">Выезд мастера в пределах МКАД</span></p>
+		</div>
 		<div id="h2fix"></div>
 		<h2>ЗАКАЗАТЬ ЗВОНОК</h2>
 
@@ -516,7 +550,7 @@
 			<div class="forms submit" style="line-height:40px">Оставить заявку!</div>
 
 		</form>
-
+</section>
 	</article>
 	<footer>
 		<div id="footerLeft">
