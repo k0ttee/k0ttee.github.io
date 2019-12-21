@@ -608,30 +608,14 @@
 
 	</header>
 	<article>
-		<p>Здесь что-нибудь о контореееее ееееееее ееееее ееееее ееееееее ееееееее еееееее ееееее ееееее еееееее еееее еееееее е еее ееееее еееееее еее ееееееее еееееее ееееее ееее ееее еее ееееее еееее ееееееее еееееее еееееее еееееее ееееее ееееее ееее ееееее е ееееее ееееее еее еееееееее ее еееее ееееее ееее еее еееее е еееее ееее еееееее еее ее еееее.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia velit aut commodi, iste iure numquam corporis voluptas veniam molestiae itaque natus suscipit amet, tempore ducimus corrupti eius blanditiis odio praesentium, ullam harum magni tempora a explicabo. Corrupti incidunt minus, doloribus beatae earum neque fuga repudiandae nesciunt voluptates laboriosam nobis.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, suscipit saepe. Dignissimos quo rem inventore et, totam impedit modi dolorum excepturi, ducimus tempora, cumque, labore doloribus reprehenderit eligendi natus iusto?</p>
+
+<section id="theArticle">
+	
+</section>
 		
-		<h2>ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС</h2>
-<section>
-		<div style="min-height: 47px">
-			<p class="advantage clock"><span class="vCenterFix">Диагностика и указание неизменной стоимости в день обращения</span></p>
-			<p class="advantage gear"><span class="vCenterFix">Всегда в наличии оригинальные запчасти с завода производителя</span></p>
-			<p class="advantage like"><span class="vCenterFix">Низкие цены и превосходное качество предоставляемых услуг</span></p>
-			<p class="advantage truck"><span class="vCenterFix">Выезд мастера в пределах МКАД</span></p>
-		</div>
-		<div id="h2fix"></div>
-		<h2>ЗАКАЗАТЬ ЗВОНОК</h2>
 
-		<form action="/">
-			<input class="forms transition" type="text" id="fio" name="fio" placeholder="ФИО">
-			<input class="forms transition" type="tel" id="nomer" name="nomer" placeholder="Номер">
-			<!-- <input class="forms submit" type="button" value="Оставить заявку!"> -->
-			<div class="forms submit" style="line-height:40px">Оставить заявку!</div>
-
-		</form>
+<section class="theForm">
+		
 </section>
 	</article>
 	<footer>
@@ -693,6 +677,7 @@ $('body').animate({
     console.log('');
   });
 
+//фоны подвала
 if(window.location.pathname=='/partneram.html'){
 	$('footer').css('backgroundImage', 'url(footer-segway-partners.svg)'); //фон подвала на странице "партнёрам"
 }
@@ -700,6 +685,21 @@ if(window.location.pathname=='/kontakti.html'){
 	$('footer').css('backgroundImage', 'url(footer-segway-contacts.svg)'); //фон подвала на странице "контакты"
 }
 
+//формы связи
+if(window.location.pathname=='/'){
+	$('.theForm').load('/template/forma-zakaza.html');
+}
+if(window.location.pathname=='/partneram.html'){
+	$('.theForm').load('/template/forma-partnerstva.html');
+}
+
+//текстовый контент
+if(window.location.pathname=='/'){
+	$('#theArticle').load('/template/tekst-glavnoi-stranici.html');
+}
+if(window.location.pathname=='/partneram.html'){
+	$('#theArticle').load('/template/tekst-stranici-partneram.html');
+}
 
 
 
