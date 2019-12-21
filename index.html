@@ -28,7 +28,7 @@
 		html{background: #F6F6F6;}
 
 
-		#icon_logo{
+		#icon_logo_pc{
 			width: 144px;
 			height: 65px;
 			background: url(icon-logo.svg);
@@ -550,6 +550,22 @@
 	.btn-menu span{display:block;height:4px;width:28px;border-radius:4px;background-color:rgba(254, 94, 36, 1);margin:4px 0 0;transition:all 0.2s linear 0.23s;position:relative;opacity:0.5;}
 	.btn-menu span.first{margin-top:0}
 	.btn-menu span.third{width: 20px;}
+
+
+	#icon_logo{
+		width: 144px;
+		height: 65px;
+		background: url(icon-logo.svg);
+		/*position: absolute;
+		top: 17px;
+		left: 0;*/
+		margin: 20px 0 0 19px;
+		border: none;
+		float: left;
+	}
+	#icon_logo_pc{
+		display: none !important;
+	}
 }
 </style>
 <input type="checkbox" id="toggler" class="toggler">
@@ -577,6 +593,7 @@
 		
 		<!-- шапка -->
 		<!-- <div id="icon_menu"></div> -->
+		<div id="icon_logo_pc"></div>
 		<a href="/" target="_blank" id="icon_instagram"></a>
 		<a href="/" target="_blank" id="icon_vk"></a>
 		
