@@ -1,5 +1,13 @@
 {
-  "faq":"F.A.Q.",
-  "log-in":"Sign In",
-  "registration":"Sign Up"
+  "faq": {
+      "text":"F.A.Q.",
+      "do":"showFaq"
+  },
+  "log-in": {
+      "text":"Sign In",
+      "do":"showSignIn"
+  },
+  "registration": {
+      "text":"Sign Up",
+      "do":"showSignUp"
 }
