@@ -176,14 +176,8 @@
 		}
 		console.log(digit);
 		return(digit);
-		
-// 		console.log(digit);
-// 		console.log(typeof(digit));
-// 		var btc = Math.trunc(digit);
-// 		console.log(btc);
-		
-		
 	}
+
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
 			data = data[window.user.lang];
