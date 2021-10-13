@@ -1,11 +1,11 @@
 {
   "en":{
-      "showFaq":"F.A.Q.",
+      "showFaq":"Help",
       "showSignUp":"Sign Up",
       "showSignIn":"Sign In"
   },
   "ru":{
-     "showFaq":"ЧАВО",
+     "showFaq":"Помощь",
      "showSignUp":"Регистрация",
      "showSignIn":"Вход"
   }
