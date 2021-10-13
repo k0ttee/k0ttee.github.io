@@ -1,17 +1,17 @@
 {
   "en":{
       "Games":"Games",
+      "Profile":"Profile",
       "Help":"Help",
       "SignUp":"Sign Up",
-      "Profile":"Profile",
       "SignIn":"Sign In",
       "Exit":"Sigh Out"
   },
   "ru":{
      "Games":"Игры",
+     "Profile":"Профиль",
      "Help":"Помощь",
      "SignUp":"Регистрация",
-     "Profile":"Профиль",
      "SignIn":"Вход",
      "Exit":"Выход"
   }
