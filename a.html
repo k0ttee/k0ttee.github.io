@@ -44,12 +44,17 @@
 		}
 		
 		body{
-			min-height: 100vh;
-			position: relative;
-			background: lightblue;
+			display: flex;
+  			flex-direction: column;
+  			min-height: 100%;
 		}
 
 		/* fix */
+		
+		.heightfix{
+			flex: 1 0 auto;
+			background: lightblue;
+		}
 
 		.clearfix {
 			clear: both;
@@ -120,8 +125,7 @@
 	/* footer */
 	
 	footer{
-		position: absolute;
-		bottom: 0;
+		flex: 0 0 auto;
 		width: 100%;
 		background: #24292F;
 		color: rgba(255,255,255,0.7);
