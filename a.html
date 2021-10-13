@@ -77,7 +77,7 @@
 </style>
 
 <script>
-	let user = {
+	let window.user = {
 		id: '123456',
 		lang: 'ru'
 	}
@@ -88,8 +88,8 @@
 
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
-			data = data[user.lang];
-			if(typeof(user.id) != 'string'){
+			data = data[window.user.lang];
+			if(typeof(window.user.id) != 'string'){
 				delete data['Games'];
 				delete data['Profile'];
 				delete data['Exit'];
@@ -105,7 +105,7 @@
 		});
 	}
 	
-	console.log(user.id);
-	console.log(typeof(userId));
+	console.log(window.user.id);
+	console.log(typeof(window.userId));
 	loadMenu();
 </script>
