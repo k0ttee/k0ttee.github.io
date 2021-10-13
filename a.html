@@ -167,8 +167,11 @@
 <script>
 	function satoshiToBtc(satoshi){
 		btc = satoshi / 100000000;
+		satoshi = btc.replace(/.*,/, '');
 		btc = btc.replace(/,.*/, '');
-		return btc;
+		console.log(btc);
+		console.log(satoshi);
+		
 		
 // 		while(window.user.balance.length < 8){
 // 			window.user.balance = window.user.balance + "0";
