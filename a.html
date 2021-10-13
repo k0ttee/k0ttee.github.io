@@ -64,7 +64,7 @@
 </style>
 
 <script>
-	window.menu_type = 'not-log-in';
+	window.menuType = 'guest';
 	window.lang = 'ru';
 </script>
 	
@@ -72,15 +72,15 @@
 	$.getJSON('/menu.json', function (data) {
 		console.log(window.lang);
 		
-		let allMenu = data[lang];
-		console.log(allMenu);
+// 		let theMenu = data[lang];
+// 		console.log(theMenu);
 		
 		
 		
-// 		var items = [];
-// 		$.each( data, function( key, val ) {
-// 			items.push( "<li id='" + key + "'>" + val + "</li>" );
-// 		});
-// 		console.log(items);
+		var menu = [];
+		$.each( data[lang], function( key, val ) {
+			menu.push( "<li id='" + key + "'>" + val + "</li>" );
+		});
+		console.log(menu);
 	});
 </script>
