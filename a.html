@@ -67,7 +67,7 @@
 	
 <script>
 	$.get('/menu.json', function (data) {
-		alert(data);
-// 		data = $(data).find('#test');
+		var obj = $.parseJSON(data);
+		console.log(obj);
 	});
 </script>
