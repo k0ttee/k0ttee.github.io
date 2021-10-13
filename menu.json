@@ -1,13 +1,14 @@
 {
-  "faq": {
-      "text":"F.A.Q.",
-      "do":"showFaq"
-  },
-  "log-in": {
-      "text":"Sign In",
-      "do":"showSignIn"
-  },
-  "registration": {
-      "text":"Sign Up",
-      "do":"showSignUp"
+  "faq": [
+      "F.A.Q.",
+      "showFaq"
+  ],
+  "log-in": [
+      "Sign In",
+      "showSignIn"
+  ],
+  "registration": [
+      "Sign Up",
+      "showSignUp"
+  ]
 }
