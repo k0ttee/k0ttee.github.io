@@ -84,15 +84,15 @@
 		cursor: pointer;
 		color: rgba(255,255,255,1.0);
 	}
-	header nav{
+	header > nav{
 		float: right;
 	}
-	header nav a{
+	header > nav > a{
 		display: inline-block;
 		margin: 30px 16px 30px;
 		font-size: 22px;
 	}
-	header nav a:hover{
+	header > nav > a:hover{
 		color: rgba(255,255,255,1.0);
 	}
 	
@@ -101,7 +101,11 @@
 	@media only screen and (max-width: 1000px) and (min-width: 601px){
 	}
 
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: 900px){
+		header > nav{
+			float: none;
+			clear: both;
+		}
 	}
 </style>
 
