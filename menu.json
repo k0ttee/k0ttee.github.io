@@ -1,14 +1,30 @@
 {
-  "faq":[
-      "F.A.Q.",
-      "showFaq"
-  ],
-  "log-in":[
-      "Sign In",
-      "showSignIn"
-  ],
-  "registration":[
-      "Sign Up",
-      "showSignUp"
-  ]
+  "en":{
+      "faq":[
+          "F.A.Q.",
+          "showFaq"
+      ],
+      "log-in":[
+          "Sign In",
+          "showSignIn"
+      ],
+      "registration":[
+          "Sign Up",
+          "showSignUp"
+      ]
+  },
+  "ru":{
+      "faq":[
+          "ЧАВО",
+          "showFaq"
+      ],
+      "log-in":[
+          "Вход",
+          "showSignIn"
+      ],
+      "registration":[
+          "Регистрация",
+          "showSignUp"
+      ]
+  }
 }
