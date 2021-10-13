@@ -63,14 +63,19 @@
 	}
 </style>
 
-<script>let menu = 'not-log-in';</script>
+<script>
+	let menu_type = 'not-log-in';
+	let lang = 'ru';
+</script>
 	
 <script>
 	$.getJSON('/menu.json', function (data) {
-		var items = [];
-		$.each( data, function( key, val ) {
-			items.push( "<li id='" + key + "'>" + val + "</li>" );
-		});
-		console.log(items);
+		console.log(data);
+		
+// 		var items = [];
+// 		$.each( data, function( key, val ) {
+// 			items.push( "<li id='" + key + "'>" + val + "</li>" );
+// 		});
+// 		console.log(items);
 	});
 </script>
