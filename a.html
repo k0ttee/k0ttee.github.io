@@ -177,7 +177,10 @@
 				delete data['SignIn'];
 				if(typeof(window.user.balance) == 'string'){
 					window.user.balance = window.user.balance / 100000000;
-// 					window.user.balance = window.user.balace.replace(',','.')';
+					window.user.balance = window.user.balace.replace(',','.')';
+					while(window.user.balance.length < 9){
+						window.user.balance = window.user.balance + "0";
+					}
 					$('header span').html(window.user.balance);
 				}
 			}
