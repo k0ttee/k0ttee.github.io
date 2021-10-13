@@ -1,12 +1,18 @@
 {
   "en":{
-      "showFaq":"Help",
-      "showSignUp":"Sign Up",
-      "showSignIn":"Sign In"
+      "Games":"Games",
+      "Help":"Help",
+      "SignUp":"Sign Up",
+      "Profile":"Profile",
+      "SignIn":"Sign In",
+      "Exit":"Sigh Out"
   },
   "ru":{
-     "showFaq":"Помощь",
-     "showSignUp":"Регистрация",
-     "showSignIn":"Вход"
+     "Games":"Игры",
+     "Help":"Помощь",
+     "SignUp":"Регистрация",
+     "Profile":"Профиль",
+     "SignIn":"Вход",
+     "Exit":"Выход"
   }
 }
