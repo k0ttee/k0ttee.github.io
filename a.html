@@ -169,7 +169,7 @@
 		var btc = satoshi / 100000000;
 		console.log(btc);
 		satoshi = btc.replace(/\..*/gi, '');
-		btc = btc.replace(/.*\./gi, '');
+		btc = Math.trunc(btc);
 		console.log(btc);
 		console.log(satoshi);
 		
