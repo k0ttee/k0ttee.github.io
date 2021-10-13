@@ -166,11 +166,11 @@
 	
 <script>
 	function satoshiToBtc(digit){
-		var btc = digit / 100000000;
-		btc = Math.trunc(btc);
+		digit = digit / 100000000;
+		var btc = Math.trunc(digit);
 		console.log(btc);
 		
-		var satoshi = btc.replace(/.*\./gi, '');
+		var satoshi = digit.replace(/.*\./gi, '');
 		console.log(satoshi);
 		
 		
