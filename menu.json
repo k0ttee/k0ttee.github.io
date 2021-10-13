@@ -2,7 +2,6 @@
   "en":{
       "Games":"Games",
       "Profile":"Profile",
-      "Help":"Help",
       "SignUp":"Sign Up",
       "SignIn":"Sign In",
       "Exit":"Sigh Out"
@@ -10,7 +9,6 @@
   "ru":{
      "Games":"Игры",
      "Profile":"Профиль",
-     "Help":"Помощь",
      "SignUp":"Регистрация",
      "SignIn":"Вход",
      "Exit":"Выход"
