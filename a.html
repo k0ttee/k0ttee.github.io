@@ -92,7 +92,9 @@
  			delete menu['SignUp'];
 			delete menu['SignIn'];
 		}else if(menuType == 'guest'){
- 			delete menu['Games','Profile','Exit'];
+ 			delete menu['Games'];
+			delete menu['Profile'];
+			delete menu['Exit'];
 		}
 		console.log(menu);
 		$('header nav').html(menu);
