@@ -166,17 +166,21 @@
 	
 <script>
 	function satoshiToBtc(digit){
+		if(digit == 0){
+			return('0.00000000');
+		}
 		digit = digit / 100000000;
-		var btc = Math.trunc(digit);
-		console.log(btc);
+		if(digit < 0){
+			while(digit.length < 10){
+				digit = digit + "0";
+			}
+			return(digit);
+		}
 		
-		var satoshi = digit.match(/\..*/gi);
-		console.log(satoshi);
+// 		var btc = Math.trunc(digit);
+// 		console.log(btc);
 		
 		
-// 		while(.length < 8){
-// 			window.user.balance = window.user.balance + "0";
-// 		}
 	}
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
