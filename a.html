@@ -165,6 +165,14 @@
 </script>
 	
 <script>
+	function satoshiToBtc(satoshi){
+		btc = satoshi / 100000000;
+		btc = btc.replace(',','.')';
+		
+// 		while(window.user.balance.length < 8){
+// 			window.user.balance = window.user.balance + "0";
+// 		}
+	}
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
 			data = data[window.user.lang];
@@ -176,12 +184,7 @@
 				delete data['SignUp'];
 				delete data['SignIn'];
 				if(typeof(window.user.balance) == 'string'){
-					window.user.balance = window.user.balance / 100000000;
-					window.user.balance = window.user.balace.replace(',','.')';
-					while(window.user.balance.length < 9){
-						window.user.balance = window.user.balance + "0";
-					}
-					$('header span').html(window.user.balance);
+					$('header span').text(satoshiToBtc(window.user.balance));
 				}
 			}
 			var menu = [];
