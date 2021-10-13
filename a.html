@@ -65,7 +65,8 @@
 		</article>
 	</div>
 	<footer>
-		footer
+		<nav></nav>
+		<div></div>
 	</footer>
 </body>
 </html>
@@ -177,7 +178,7 @@
 		return(digit);
 	}
 
-	function loadMenu(){
+	function loadUp(){
 		$.getJSON('/menu.json', function (data) {
 			data = data[window.user.lang];
 			if(typeof(window.user.id) != 'string'){
@@ -199,10 +200,13 @@
 		});
 	}
 	
-// 	console.log('['+typeof(window.user.id)+']'+window.user.id);
-// 	console.log('['+typeof(window.user.id)+']'+window.user.lang);
+	function loadDown(){
+		$('footer nav').html('FOOTER NAV - will be contain Social Networks');
+		$('footer div').html('FOOTER DIV - will be contain Social Shares');
+	}
 	
 	$(function() {
-// 		loadMenu();
+		loadUp();
+		loadDown();
 	});
 </script>
