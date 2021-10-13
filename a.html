@@ -66,8 +66,11 @@
 <script>let menu = 'not-log-in';</script>
 	
 <script>
-	$.get('/menu.json', function (data) {
-		var obj = $.parseJSON(data);
-		console.log(obj);
+	$.getJSON('/menu.json', function (data) {
+		var items = [];
+		$.each( data, function( key, val ) {
+			items.push( "<li id='" + key + "'>" + val + "</li>" );
+		});
+		console.log(items);
 	});
 </script>
