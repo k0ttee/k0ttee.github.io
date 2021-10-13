@@ -70,15 +70,12 @@
 	
 <script>
 	$.getJSON('/menu.json', function (data) {
-// 		console.log(data);
 		console.log(window.lang);
-// 		console.log(data.window.lang);
 		
-		let menu = data[lang];
-		console.log(menu);
+		let allMenu = data[lang];
+		console.log(allMenu);
 		
-		let gmenu = data[window.lang];
-		console.log(gmenu);
+		
 		
 // 		var items = [];
 // 		$.each( data, function( key, val ) {
