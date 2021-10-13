@@ -1,13 +1,13 @@
 {
-  "faq": [
+  "faq":[
       "F.A.Q.",
       "showFaq"
   ],
-  "log-in": [
+  "log-in":[
       "Sign In",
       "showSignIn"
   ],
-  "registration": [
+  "registration":[
       "Sign Up",
       "showSignUp"
   ]
