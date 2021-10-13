@@ -170,11 +170,11 @@
 		var btc = Math.trunc(digit);
 		console.log(btc);
 		
-		var satoshi = digit.replace(/\./, '');
+		var satoshi = digit.replace(/(.+?\.)/, "");
 		console.log(satoshi);
 		
 		
-// 		while(window.user.balance.length < 8){
+// 		while(.length < 8){
 // 			window.user.balance = window.user.balance + "0";
 // 		}
 	}
