@@ -170,15 +170,15 @@
 			return('0.00000000');
 		}
 		digit = digit / 100000000;
-		console.log(digit);
-		console.log(typeof(digit));
-		while(digit.toString().match(/\.(\d+)/)?.[1].length < 10){
+		digit = digit.toString();
+		while(digit.match(/\.(\d+)/)?.[1].length < 10){
 			digit = digit + "0";
 		}
 		console.log(digit);
 		return(digit);
 		
-		
+// 		console.log(digit);
+// 		console.log(typeof(digit));
 // 		var btc = Math.trunc(digit);
 // 		console.log(btc);
 		
