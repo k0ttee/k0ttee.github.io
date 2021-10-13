@@ -84,20 +84,19 @@
 	
 <script>
 	$.getJSON('/menu.json', function (data) {
+		data = data[lang];
+		if(window.menuType == 'user'){
+ 			delete data['SignUp'];
+			delete data['SignIn'];
+		}else if(window.menuType == 'guest'){
+ 			delete data['Games'];
+			delete data['Profile'];
+			delete data['Exit'];
+		}
 		var menu = [];
-		$.each( data[lang], function( key, val ) {
+		$.each( data, function( key, val ) {
 			menu.push( "<a onClick='" + key + "'>" + val + "</a>" );
 		});
-		if(window.menuType == 'user'){
- 			delete menu['SignUp'];
-			delete menu['SignIn'];
-			console.log(menu);
-		}else if(window.menuType == 'guest'){
- 			delete menu['Games'];
-			delete menu['Profile'];
-			delete menu['Exit'];
-			console.log(menu);
-		}
 // 		console.log(menu);
 		$('header nav').html(menu);
 		
