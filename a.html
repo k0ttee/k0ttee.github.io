@@ -77,20 +77,20 @@
 </style>
 
 <script>
-// 	window.menuType = 'user';
+// 	window.userID = 123456;
 	window.lang = 'ru';
 </script>
 	
 <script>
 	$.getJSON('/menu.json', function (data) {
 		data = data[lang];
-		if(window.menuType == 'user'){
- 			delete data['SignUp'];
-			delete data['SignIn'];
-		}else{
- 			delete data['Games'];
+		if(!window.userId){
+			delete data['Games'];
 			delete data['Profile'];
 			delete data['Exit'];
+		}else{
+ 			delete data['SignUp'];
+			delete data['SignIn'];
 		}
 		var menu = [];
 		$.each( data, function( key, val ) {
