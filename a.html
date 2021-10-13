@@ -78,6 +78,7 @@
 
 <script>
 	window.menuType = 'guest';
+// 	window.menuType = 'user';
 	window.lang = 'ru';
 </script>
 	
@@ -87,6 +88,12 @@
 		$.each( data[lang], function( key, val ) {
 			menu.push( "<a onClick='" + key + "'>" + val + "</a>" );
 		});
+		if(menuType == 'user'){
+ 			delete menu['SignUp'];
+			delete menu['SignIn'];
+		}else if(menuType == 'guest'){
+ 			delete menu['Games','Profile','Exit'];
+		}
 		console.log(menu);
 		$('header nav').html(menu);
 	});
