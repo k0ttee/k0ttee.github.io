@@ -62,3 +62,12 @@
 	@media screen and (max-width: 600px){
 	}
 </style>
+
+<script>let menu = 'not-log-in';</script>
+	
+<script>
+	$.get('/menu.json', function (data) {
+		alert('data');
+// 		data = $(data).find('#test');
+	});
+</script>
