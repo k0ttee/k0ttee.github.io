@@ -77,7 +77,6 @@
 </style>
 
 <script>
-	window.menuType = 'guest';
 // 	window.menuType = 'user';
 	window.lang = 'ru';
 </script>
@@ -88,7 +87,7 @@
 		if(window.menuType == 'user'){
  			delete data['SignUp'];
 			delete data['SignIn'];
-		}else if(window.menuType == 'guest'){
+		}else{
  			delete data['Games'];
 			delete data['Profile'];
 			delete data['Exit'];
@@ -99,7 +98,5 @@
 		});
 // 		console.log(menu);
 		$('header nav').html(menu);
-		
-		console.log('window if menu ready');
 	});
 </script>
