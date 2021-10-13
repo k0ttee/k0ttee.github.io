@@ -85,7 +85,7 @@
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
 			data = data[lang];
-			if(typeof(window.userId) != 'string'){
+			if(typeof(userId) != 'string'){
 				delete data['Games'];
 				delete data['Profile'];
 				delete data['Exit'];
@@ -101,7 +101,7 @@
 		});
 	}
 	
-	console.log(window.userId);
-	console.log(typeof(window.userId));
+	console.log(userId);
+	console.log(typeof(userId));
 	loadMenu();
 </script>
