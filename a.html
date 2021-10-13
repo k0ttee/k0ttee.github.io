@@ -85,7 +85,7 @@
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
 			data = data[lang];
-			if(typeof(window.userId) == 'undefined'){
+			if(typeof(window.userId) != 'string'){
 				delete data['Games'];
 				delete data['Profile'];
 				delete data['Exit'];
