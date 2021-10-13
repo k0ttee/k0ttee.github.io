@@ -167,6 +167,7 @@
 <script>
 	function satoshiToBtc(digit){
 		if(digit == 0){
+			console.log(digit);
 			return('0.00000000');
 		}
 		digit = digit / 100000000;
@@ -174,6 +175,7 @@
 			while(digit.length < 10){
 				digit = digit + "0";
 			}
+			console.log(digit);
 			return(digit);
 		}
 		
