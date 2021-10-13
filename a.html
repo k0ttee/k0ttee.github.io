@@ -91,12 +91,14 @@
 		if(window.menuType == 'user'){
  			delete menu['SignUp'];
 			delete menu['SignIn'];
+			console.log(menu);
 		}else if(window.menuType == 'guest'){
  			delete menu['Games'];
 			delete menu['Profile'];
 			delete menu['Exit'];
+			console.log(menu);
 		}
-		console.log(menu);
+// 		console.log(menu);
 		$('header nav').html(menu);
 		
 		console.log('window menu ready');
