@@ -195,7 +195,7 @@
 				delete data['SignUp'];
 				delete data['SignIn'];
 				if(typeof(window.user.balance) == 'string'){
-					$('header span').text(satoshiToBtc(window.user.balance));
+					$('header span').html(satoshiToBtc(window.user.balance));
 				}
 			}
 			var menu = [];
