@@ -84,7 +84,7 @@
 <script>
 	$.getJSON('/menu.json', function (data) {
 		data = data[lang];
-		if(!window.userId){
+		if(window.userId == undefined){
 			delete data['Games'];
 			delete data['Profile'];
 			delete data['Exit'];
