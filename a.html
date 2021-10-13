@@ -46,6 +46,7 @@
 </head>
 <body>
 	<header>
+		<a onClick="showHome();">Crypstals.fun</a>
 		<div></div>
 		<nav></nav>
 		<span>0.11222333</span>
@@ -58,6 +59,10 @@
 	header{
 		background: #000;
 		color: #FFF;
+	}
+	header a{
+		float: left;
+		clear: both;
 	}
 	header span{
 		float: right;
@@ -104,7 +109,7 @@
 			}
 			var menu = [];
 			$.each( data, function( key, val ) {
-				menu.push( "<a onClick='" + key + "'>" + val + "</a>" );
+				menu.push( "<a onClick='show" + key + "'>" + val + "</a>" );
 			});
 			$('header nav').html(menu);
 		});
