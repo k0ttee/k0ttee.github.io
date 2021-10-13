@@ -77,15 +77,17 @@
 </style>
 
 <script>
-	window.user.id = 123456;
-	window.user.lang = 'ru';
+	user.id = 123456;
+	user.lang = 'ru';
 </script>
 	
 <script>
+	'use strict';
+
 	function loadMenu(){
 		$.getJSON('/menu.json', function (data) {
-			data = data[window.user.lang];
-			if(typeof(window.user.id) != 'string'){
+			data = data[user.lang];
+			if(typeof(user.id) != 'string'){
 				delete data['Games'];
 				delete data['Profile'];
 				delete data['Exit'];
