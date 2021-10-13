@@ -77,7 +77,7 @@
 </style>
 
 <script>
-// 	window.userID = 123456;
+	window.userID = 123456;
 	window.lang = 'ru';
 </script>
 	
@@ -96,7 +96,7 @@
 		$.each( data, function( key, val ) {
 			menu.push( "<a onClick='" + key + "'>" + val + "</a>" );
 		});
-		console.log('not user ID');
+		console.log('have user ID');
 		$('header nav').html(menu);
 	});
 </script>
