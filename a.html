@@ -111,7 +111,7 @@
 		}
 		header > nav > a{
 			margin: 0;
-			padding: 0 16px 0;
+			padding: 4px 16px 4px;
 			border: solid 1px rgba(255,255,255,0.7);
 			border-right: none;
 		}
@@ -121,6 +121,16 @@
 		header > nav > a:last-child{
 			border-radius: 0 8px 8px 0;
 			border-right: solid 1px rgba(255,255,255,0.7);
+		}
+	}
+	@media screen and (max-width: 600px){
+		header > nav > a{
+			display: block;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			width: calc(100% - 32px);
+			margin: 0 auto 0;
 		}
 	}
 </style>
