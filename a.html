@@ -97,10 +97,10 @@
 			$.each( data, function( key, val ) {
 				menu.push( "<a onClick='" + key + "'>" + val + "</a>" );
 			});
-			console.log('user ID is defined');
 			$('header nav').html(menu);
 		});
 	}
 	
+	console.log(window.lang);
 	loadMenu();
 </script>
