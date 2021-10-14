@@ -66,6 +66,7 @@
 	</div>
 	<footer>
 		<nav></nav>
+		<span></span>
 		<div></div>
 	</footer>
 </body>
@@ -190,7 +191,7 @@
 				delete data['SignUp'];
 				delete data['SignIn'];
 				if(typeof(window.user.balance) == 'string'){
-					$('header span').html(satoshiToBtc(window.user.balance));
+					$('header span').text(satoshiToBtc(window.user.balance));
 				}
 			}
 			var menu = [];
@@ -203,6 +204,7 @@
 	
 	function loadDown(){
 		$('footer nav').html('FOOTER NAV - will be contain Social Networks');
+		$('footer span').text('FOOTER SPAN - will be contain Select Language');
 		$('footer div').html('FOOTER DIV - will be contain Social Shares');
 	}
 	
