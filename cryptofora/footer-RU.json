@@ -5,6 +5,6 @@
   "footer h3:eq(2)" : "Поддержка",
   "#footer ul:eq(0) a:eq(0)" : "Политика конфиденциальности",
   "#footer ul:eq(0) a:eq(1)" : "Условия и правила",
-  "#footer ul:eq(0) a:eq(1)" : "Помощь",
+  "#footer ul:eq(0) a:eq(2)" : "Помощь",
   ".p-footer-copyright div" : "Форум хостится на <a target='_blank' href='/'>этом</a>"
 }
