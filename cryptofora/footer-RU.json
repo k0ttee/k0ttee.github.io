@@ -3,5 +3,8 @@
   "footer h3:eq(0)" : "Важные ссылки",
   "footer h3:eq(1)" : "Соцсети",
   "footer h3:eq(2)" : "Поддержка",
+  "#footer ul:eq(0) a:eq(0)" : "Политика конфиденциальности",
+  "#footer ul:eq(0) a:eq(1)" : "Условия и правила",
+  "#footer ul:eq(0) a:eq(1)" : "Помощь",
   ".p-footer-copyright div" : "Форум хостится на <a target='_blank' href='/'>этом</a>"
 }
