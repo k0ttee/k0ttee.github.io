@@ -6,6 +6,5 @@
   "#footer ul:eq(0) a:eq(0)" : "Политика конфиденциальности",
   "#footer ul:eq(0) a:eq(1)" : "Условия и правила",
   "#footer ul:eq(0) a:eq(2)" : "Помощь",
-  "#footer ul:eq(2) a:eq(0)" : "Важно!",
-  ".p-footer-copyright div" : "Cryptofora©"
+  "#footer ul:eq(2) a:eq(0)" : "Важно!"
 }
