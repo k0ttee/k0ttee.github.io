@@ -22,10 +22,23 @@
   }
   p {
     margin: 8px;
+    line-height: 24px;
+  }
+  .command {
+    background: #000;
+    color: orange;
+    padding: 4px;
+    border-radius: 8px;
   }
 </style>
 
 <body>
+
+
+
+
+
+
 
  <h2>BIOS</h2>
 
@@ -53,4 +66,186 @@
 
  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/06_Save.png">
 
+
+
+
+
+
+
+
+
+ <h2>Драйвер Nvidia</h2>
+
+ <p>Отключить защитник винды...
+  <br>
+  В пуске найти <b>PowerShell</b> и правым кликом запустить от имени администратора.
+  <br>
+  Вставить команду...
+  <br>
+  <span class="command">Set-MpPreference -DisableRealtimeMonitoring $true</span>
+  <br>
+  ...И нажать Enter.</p>
+  <br>
+
+  <p>Скачать архив с пропатченным драйвером Nvidia.
+  <br>
+  <a target="_blank" href="https://disk.yandex.ru/d/X04plYMKyJ7jQw">581.94-Nvidia-Driver-For-CMP-30-HX.7z</a>
+  <br>
+  Скачать архиватор 7zip и установить его.
+  <br>
+  <a target="_blank" href="https://www.7-zip.org/a/7z2600-x64.exe">7z2600-x64.exe</a>
+  <br>
+  Распаковать архив архиватором 7zip.<br>
+  В распакованной папке запустить Setup и поставить драйвера.</p>
+
+
+
+
+
+
+
+
+
+
+  <h2>Частоты в простое</h2>
+
+  <p>Скачать архив с утилитой Nvidia Inspector.
+  <br>
+  <a href="https://www.techpowerup.com/download/nvidia-inspector/" target="_blank">https://www.techpowerup.com/download/nvidia-inspector/</a>
+  <br>
+  Распаковать архив и руками скопировать папку в "C:\Program Files" (ибо утилита не имеет установщика).
+  <br>
+  Запустить nvidiaInspector.exe
+  <br>
+  <br>
+
+  Возле часов добавится иконка.
+  <br>
+  Правым кликом нажать по ней и выбрать пункт "Multi Display Power Saver".
+  <br>
+  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/07_power-saver.png">
+  <br>
+  <br>
+
+  Поставить три галочки.
+  <br>
+  Проверить, что ползунок для третьей галочки выставлен на 7%.
+  <br>
+  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/08_Nvidia-Inspector.png">
+  <br>
+  <br>
+  
+  Теперь в простое не будет греться и жрать много энергии зря:<br>
+  300 mHz по чипу<br>
+  400 mHz по памяти<br>
+  30° температура<br>
+  40° хотспот<br>
+  Энергопотребление можно посмотреть в GPU-Z (вкладка Sensors).
+  <br>
+  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/09_gpu-z.jpg">
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Игры и приложения</h2>
+
+  <p>Пуск → Параметры (шестерёнка) → Система → Дисплей → Настройки графики</p>
+
+  <p>Кнопкой "обзор" добавлять прилолжения (исполняемые файлы, не ярлыки).
+    <br>
+  Кнопкой "параметры" настраивать (сбережение / производительность).</p>
+
+  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/10_games_add.png">
+  <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/11_games_select.png">
+
+  <p> ⚠️ Minecraft не имеет исполняемого exe файла, он вертится в среде Java.
+    <br>
+    ⚠️ Путь для MineCraft это путь до среды выполнения Java.
+    <br>
+    ⚠️ Для MineCraft добавить этот путь (суп в пути - имя пользователя).
+    <br>
+    <br>
+    <span class="command">
+    C:\Users\Суп\AppData\Roaming\.minecraft\runtime\java-runtime-delta\windows\java-runtime-delta\bin
+    </span>
+    <br>
+    <br>
+    Нагуглил это решение на реддите. Путь узнал в свойствах процесса (в менеджере процессов).
+    <img src="https://raw.githubusercontent.com/k0ttee/k0ttee.github.io/refs/heads/master/cmp30hx/12_minecraft-path.png">
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Опционально</h2>
+  <p>
+  Новейшие драва для встройки (десятая винда сама подтягивает только старые).
+  <br>
+  Взял с сайта intel (который не открывается в РФ).
+  <br>
+  Залил на яндекс-диск.
+  <br>
+  <a target="_blank" href="https://disk.yandex.ru/d/gDisS-WkPF5W7Q">(новейшие для встройки) gfx_win_101.2140.exe</a>
+  </p>
  </body>
+
+
+
+
+
+
+
+
+
+<h2>Список использованной литературы</h2>
+
+<p>
+Гайды пердолинга гуглится по запросу `NVIDIA-CMP-HX-Hack`
+<br>
+<br>
+Патчер брал на гите красноглазика (для драйвера 581.94)
+<br>
+https://github.com/dartraiden/NVIDIA-patcher/releases/tag/581.94
+<br>
+<br>
+Драва для встройки брал на сайте intel (десятая винда сама предлагала драва старее)
+<br>
+https://www.intel.com/content/www/us/en/support/products/98909/graphics/processor-graphics/intel-hd-graphics-family/intel-hd-graphics-630.html
+<br>
+<br>
+Гайд на сбережение энергии картой в простое
+<br>
+https://github.com/dartraiden/NVIDIA-patcher/issues/161#issue-2514099207
+<br>
+<br>
+Неудачный пердолинг с NvEnc (ffmpeg может, но OBS не может)
+<br>
+https://github.com/dartraiden/NVIDIA-patcher/issues/165
+<br>
+<br>
+Старые версии Blender видят карту, только не используют её в рендере.
+<br>
+Раз так, нафиг старые версии, можно сразу учиться на пятой версии.
+<br>
+https://download.blender.org/release/
+</p>
